@@ -25,14 +25,18 @@ var convert = function(input) {
       if(values[i]<=input) {
         output = output + letters[i];
         input -= values[i];
+
+        //If we have four in a row
         if(output.slice(output.length-4,output.length)===letters[i]+letters[i]+letters[i]+letters[i]) {
           var sumOfLastFive = 0;
-          for(var j=0; j<5; j++) {
+          for(var j=0; j<5; j++) {//do this 5 times
             sumOfLastFive += values[letters.indexOf(output[output.length-1])];
             output = output.slice(0,output.length-1);
           }
           output = output + subtractNotation(sumOfLastFive);
         }
+        //end four in a row
+
         break;
       }
     }
