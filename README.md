@@ -4,7 +4,7 @@
 
 ## Description
 
-_This web app will convert a number (1 - 3,999) into a Roman numeral. _
+_This web app will convert a number (1 - 3,999) into a Roman numeral._
 
 ## Specs
 | Behavior        | Input           | Outcome  |
